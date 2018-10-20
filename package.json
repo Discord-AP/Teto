@@ -1,0 +1,9 @@
+{
+  "name": "Teto",
+  "version": "1.0.0",
+  "main": "Teto.js",
+  "author": "Ascendantz",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
