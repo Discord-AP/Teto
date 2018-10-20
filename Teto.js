@@ -4,6 +4,10 @@ const Teto = new Discord.Client({disableEveryone: true});
 const Prefix = "t!";
 Teto.commands = new Discord.Collection();
 
+Teto.on("ready", async () => {
+	Teto.user.setActivity(`On The ${message.guild.name}`, {type: "STREAMING"});
+	Teto.user.setStatus('stream')
+
 fs.readdir("./Commands", (err, files) => {
 	
 	if(err) console.log(err);
