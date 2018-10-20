@@ -4,9 +4,8 @@ const Teto = new Discord.Client({disableEveryone: true});
 const Prefix = "t!";
 Teto.commands = new Discord.Collection();
 
-Teto.on("ready", async () => {
-	Teto.user.setActivity(`On The ${message.guild.name}`, {type: "STREAMING"});
-	Teto.user.setStatus('stream')
+	Teto.user.setActivity(`Over The ${message.guild.name}`, {type: "WATCHING"});
+	Teto.user.setStatus('dnd')
 
 fs.readdir("./Commands", (err, files) => {
 	
